@@ -11,3 +11,127 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main_line{
+    width: 75%;
+}
+@media screen and (max-width: 600px) {
+  .main_line {
+    width:90%;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width:600px) {
+   .main_line {
+     width:82%;
+   }
+}
+
+.main_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.padded{
+    padding:20px;
+    margin-bottom:20px;
+    position:relative;
+    display: inline-block;
+}
+
+.padded:hover{
+    background-color: #e6e6e6;
+}
+
+.section_style{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20;
+}
+@media screen and (max-width: 800px) {
+  .section_style {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width:800px) {
+   .section_style {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 20;
+   }
+}
+
+.head_title{
+    font-size: 22px;
+}
+
+.summary{
+    color: #808080;
+    font-size: 14px;
+}
+
+.text_body{
+    font-size:11px;
+}
+
+.read_source{
+
+}
+
+.button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 10px 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size:12px;
+}
+
+.end{
+  bottom: 0;
+  left: 20;
+  position: absolute;
+}
+
+.footer_style{
+    min-height: 150px;
+    background-color:#808080;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    padding: 30px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("./img/news.jpg");
+
+  /* Set a specific height */
+  min-height: 50vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
