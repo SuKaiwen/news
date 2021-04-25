@@ -64,7 +64,7 @@ code {
 }
 
 .head_title{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .summary{
@@ -102,7 +102,7 @@ code {
 
 .footer_style{
     min-height: 150px;
-    background-color:#808080;
+    background-color:#333333;
     align-items: center;
     justify-content: center;
     text-align:center;
@@ -130,7 +130,7 @@ code {
   transform: translate(-50%, -50%);
 }
 
-.container {
+.container2 {
   position: relative;
   text-align: center;
   color: white;

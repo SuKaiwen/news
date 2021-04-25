@@ -5,20 +5,25 @@ import App from './App';
 import Footer from './Footer';
 import reportWebVitals from './reportWebVitals';
 import News from './img/news.jpg';
+import Header from './Header';
+import NavigationBar from './NavigationBar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className = "container">
-        <div className = "parallax">
-            <div className = "centered">
-                <h1 style = {{fontSize: "50px", letterSpacing:"10px"}}>NEXTNEWS</h1>
-                <h1 style = {{fontSize: "15px"}}>All in One News Viewing Platform</h1>
-            </div>
-        </div>
-    </div>
+    <NavigationBar />
+    <Header />
     <div className = "main_body">
         <div className = "main_line">
-            <App />
+            <div id = "politics"></div>
+            <App term = {"Politics"} number = {"01"} />
+            <div id = "business"></div>
+            <App term = {"Business"} number = {"02"} />
+            <div id = "tech"></div>
+            <App term = {"Tech"} number = {"03"} />
+            <div id = "health"></div>
+            <App term = {"Health"} number = {"04"} />
+            <div id = "sports"></div>
+            <App term = {"Sports"} number = {"05"} />
         </div>
     </div>
     <Footer />
